@@ -1,11 +1,15 @@
-import React from 'react';
+import React,{Component} from 'react';
+import SearchContainer from './searchContainer';
 
-function App() {
-  return (
-    <div className="App">
-      <h1>Life</h1>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return(
+      <div className="app-container">
+          <SearchContainer />
+      </div>
+    );
+  }
 }
 
-export default App;
+
+

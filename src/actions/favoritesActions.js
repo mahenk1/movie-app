@@ -1,16 +1,13 @@
-const favoritesLaterInitialState={
+export default getFavorites=()=>({
+    type:"GET_FAVORITE"
+});
 
-};
+export default addFavorites=(fav)=>({
+    type:"ADD_FAVORITE",
+    payload:fav
+});
 
-const favoritesLaterActions=(state=favoritesLaterInitialState,action)=>{
-    switch(action.type) {
-        case "GET_FAVORITE":
-            break;
-        case "ADD_FAVORITE":
-            break;
-        case "REMOVE_FAVORITE":
-            break;
-        default:
-            break;
-    }
-}
+export default removeFavorites=(fav)=>({
+    type:"REMOVE_FAVORITE",
+    payload:fav
+});
